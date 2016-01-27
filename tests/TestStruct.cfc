@@ -7,9 +7,13 @@ component extends="testbox.system.BaseSpec"
 		describe( "Test for Struct", function() {
 			
 			
+				/*
+				Determines if the object is a structure
+				*/
 				it( "Should run Struct.IsStruct()", function() {
-					var Package = new out.Struct();
-				
+					var Package = new lucee.util.Struct();
+					
+
 					var res =  Package.IsStruct();
 					
 
@@ -21,3 +25,5 @@ component extends="testbox.system.BaseSpec"
 	
 
 }
+
+

@@ -75,9 +75,9 @@ include template="templates/test.template.cfm";
 		FileWrite("./generated/tests/Test#p#.cfc", test);
 
 
-
+		echo("<pre>");
 		echo(output);
-		
+		echo("</pre>");
 	}
 	//Now create the components
 	

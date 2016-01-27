@@ -7,9 +7,13 @@ component extends="testbox.system.BaseSpec"
 		describe( "Test for Authentication", function() {
 			
 			
+				/*
+				Gets the name of an authenticated user.
+				*/
 				it( "Should run Authentication.GetAuthUser()", function() {
-					var Package = new out.Authentication();
-				
+					var Package = new lucee.util.Authentication();
+					
+
 					var res =  Package.GetAuthUser();
 					
 
@@ -21,3 +25,5 @@ component extends="testbox.system.BaseSpec"
 	
 
 }
+
+

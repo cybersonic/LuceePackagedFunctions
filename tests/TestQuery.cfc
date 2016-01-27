@@ -7,9 +7,13 @@ component extends="testbox.system.BaseSpec"
 		describe( "Test for Query", function() {
 			
 			
+				/*
+				Determines whether value is a query.
+				*/
 				it( "Should run Query.IsQuery()", function() {
-					var Package = new out.Query();
-				
+					var Package = new lucee.util.Query();
+					
+
 					var res =  Package.IsQuery();
 					
 
@@ -21,3 +25,5 @@ component extends="testbox.system.BaseSpec"
 	
 
 }
+
+

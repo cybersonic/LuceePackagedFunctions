@@ -7,9 +7,13 @@ component extends="testbox.system.BaseSpec"
 		describe( "Test for Sql", function() {
 			
 			
+				/*
+				Returns back string without letting the engine escape the single quotes. Used within CFQUERY blocks usually
+				*/
 				it( "Should run Sql.PreserveSingleQuotes()", function() {
-					var Package = new out.Sql();
-				
+					var Package = new lucee.util.Sql();
+					
+
 					var res =  Package.PreserveSingleQuotes();
 					
 
@@ -21,3 +25,5 @@ component extends="testbox.system.BaseSpec"
 	
 
 }
+
+

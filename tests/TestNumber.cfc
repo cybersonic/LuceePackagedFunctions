@@ -7,9 +7,13 @@ component extends="testbox.system.BaseSpec"
 		describe( "Test for Number", function() {
 			
 			
+				/*
+				Determines if the object represents a numeric
+				*/
 				it( "Should run Number.IsNumeric()", function() {
-					var Package = new out.Number();
-				
+					var Package = new lucee.util.Number();
+					
+
 					var res =  Package.IsNumeric();
 					
 
@@ -21,3 +25,5 @@ component extends="testbox.system.BaseSpec"
 	
 
 }
+
+

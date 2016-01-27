@@ -1,6 +1,6 @@
-#Lucee Packaged Functions
+## Lucee Packaged Functions
 
-This project is inspired by Adam Cameron's work on assigning a package to all the functions provided by Lucee server. You can see the spreadsheet here: https://docs.google.com/spreadsheets/d/1mqiaJRVgh26ljEKgvhb6yf7l6uCKmAmZlIcQqlzh1KM/edit?usp=sharing
+This project is inspired by [Adam Cameron's](http://blog.adamcameron.me/) work on assigning a package to all the functions provided by Lucee server. You can see the spreadsheet here: https://docs.google.com/spreadsheets/d/1mqiaJRVgh26ljEKgvhb6yf7l6uCKmAmZlIcQqlzh1KM/edit?usp=sharing
 
 
 It is currently a work in progress and it's mainly a parser but there are now tests

@@ -7,9 +7,13 @@ component extends="testbox.system.BaseSpec"
 		describe( "Test for #p#", function() {
 			
 			<cfloop array="#funcdata.items#" item="f">
+				/*
+				#cleanDescription(f.data.description)#
+				*/
 				it( "Should run #p#.#f.cleanname#()", function() {
-					var Package = new out.#p#();
-				
+					var Package = new lucee.util.#p#();
+					
+
 					var res =  Package.#f.cleanname#();
 					
 
@@ -21,3 +25,14 @@ component extends="testbox.system.BaseSpec"
 	
 </cfoutput>
 }
+
+<cfscript>
+	function cleanDescription(desc){
+		var ret = Replace(desc, chr(13), "", "all");
+			ret = Replace(ret, chr(10), "", "all");
+			ret = Replace(ret, "    ", " ", "all");
+
+		return ret;
+	}
+
+</cfscript>

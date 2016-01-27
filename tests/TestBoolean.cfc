@@ -7,9 +7,13 @@ component extends="testbox.system.BaseSpec"
 		describe( "Test for Boolean", function() {
 			
 			
+				/*
+				Determines if the object represents a boolean value
+				*/
 				it( "Should run Boolean.IsBoolean()", function() {
-					var Package = new out.Boolean();
-				
+					var Package = new lucee.util.Boolean();
+					
+
 					var res =  Package.IsBoolean();
 					
 
@@ -21,3 +25,5 @@ component extends="testbox.system.BaseSpec"
 	
 
 }
+
+

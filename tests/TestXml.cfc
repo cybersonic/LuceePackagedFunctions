@@ -7,9 +7,13 @@ component extends="testbox.system.BaseSpec"
 		describe( "Test for Xml", function() {
 			
 			
+				/*
+				Determines whether a string is well-formed XML text.
+				*/
 				it( "Should run Xml.IsXML()", function() {
 					var Package = new lucee.util.Xml();
-				
+					
+
 					var res =  Package.IsXML();
 					
 
@@ -21,3 +25,5 @@ component extends="testbox.system.BaseSpec"
 	
 
 }
+
+

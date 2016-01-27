@@ -7,9 +7,13 @@ component extends="testbox.system.BaseSpec"
 		describe( "Test for Variable", function() {
 			
 			
+				/*
+				Evaluates a string value to determine whether the variable  named in it exists.
+				*/
 				it( "Should run Variable.IsDefined()", function() {
-					var Package = new out.Variable();
-				
+					var Package = new lucee.util.Variable();
+					
+
 					var res =  Package.IsDefined();
 					
 
@@ -21,3 +25,5 @@ component extends="testbox.system.BaseSpec"
 	
 
 }
+
+
