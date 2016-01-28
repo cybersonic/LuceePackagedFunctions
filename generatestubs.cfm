@@ -71,7 +71,7 @@ include template="templates/component.template.cfm";
 		savecontent variable="test"{
 include template="templates/test.template.cfm";
 		}
-		FileWrite("./generated/out/#p#.cfc", output);
+		FileWrite("./generated/lucee/util/#p#.cfc", output);
 		FileWrite("./generated/tests/Test#p#.cfc", test);
 
 
